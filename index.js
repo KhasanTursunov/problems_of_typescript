@@ -1,22 +1,13 @@
 // Darsdagi masala, men chiqib ketganim uchun ishlamagandim
-// 1.1
-// function foo(son : number){
-//     return son * son
-// }
-// console.log(foo(5));
-// 2.1
-// function foo(bool :boolean)  {
-// return bool ? 1 : 0
-// }
-// console.log(foo(true))
 // 1-Masala
-// function foo(str :string) {
-//     return (
-//         str[0].toUpperCase()
-//     )
-//     }
-// console.log(foo("John"))
-// console.log(foo("Doe"))
+// function foo (name :string) :string{
+//     let str = "";
+//     name.split(" ").forEach((item) => {
+//         str += item[0].toUpperCase()
+//     });
+//     return str
+// }
+// console.log(foo("Khasan Tursunov"))
 // 2-masala
 // function foo(str :string)  {
 // switch(str){
@@ -40,17 +31,14 @@
 // }
 // console.log(user("John", 25, false))
 // 4-masala
-// let input: number | string = 5
-// function foo(input) {
-//     if(input){
-//         return input * input
-//     }
-//     else{
+// function foo(input: string | number ) : string |number {
+//     if(typeof input === "string") {
 //         return `Hello ${input}`
-//     }
+//     } else{
+//         return input * input
+//     } 
 // }
-// console.log(foo(input))
-// console.log(typeof input)
+// console.log(foo("usdbd"))
 // 5-masala
 // let user: [number, string, boolean] = [1, "username", true]
 // console.log(user)
@@ -63,21 +51,21 @@
 // }
 // console.log(avto)
 // 7-masala
-// let input: number | string = "Khasan"
-// function getLength(input) {
-//     if(input  == isNaN){   //string
-//         return input.length //uzunligi
-//     }
-//     else if(input == Array){  //array
-//         return input.length
-//     }
-//     else{
-//         return input
-//     }
-// }
-// console.log(getLength(input));
-// let str = ["Khasan", "Tursunov", "Frontend"]
-// console.log(str.length)
+var input = "Khasan";
+function getLength(input) {
+    if (input == isNaN) { //string
+        return input.length; //uzunligi
+    }
+    else if (input == Array) { //array
+        return input.length;
+    }
+    else {
+        return input;
+    }
+}
+console.log(getLength(input));
+var str = ["Khasan", "Tursunov", "Frontend"];
+console.log(str.length);
 // 8-masala
 // let newArr: number[] = []
 // function foo(n : number) {

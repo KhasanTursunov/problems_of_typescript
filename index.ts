@@ -1,36 +1,16 @@
                     // Darsdagi masala, men chiqib ketganim uchun ishlamagandim
-
-                   
-
-// 1.1
-
-// function foo(son : number){
-//     return son * son
-// }
-
-// console.log(foo(5));
-
-// 2.1
-
-// function foo(bool :boolean)  {
-// return bool ? 1 : 0
-// }
-
-// console.log(foo(true))
-
                     
-
-
                             // 1-Masala
 
-// function foo(str :string) {
-//     return (
-//         str[0].toUpperCase()
-//     )
-//     }
+// function foo (name :string) :string{
+//     let str = "";
+//     name.split(" ").forEach((item) => {
+//         str += item[0].toUpperCase()
+//     });
+//     return str
+// }
+// console.log(foo("Khasan Tursunov"))
 
-// console.log(foo("John"))
-// console.log(foo("Doe"))
 
 
                             // 2-masala
@@ -69,20 +49,18 @@
 
                         // 4-masala
 
-// let input: number | string = 5
-
-// function foo(input) {
-//     if(input){
-//         return input * input
-//     }
-//     else{
+// function foo(input: string | number ) : string |number {
+    
+//     if(typeof input === "string") {
 //         return `Hello ${input}`
-//     }
+//     } else{
+//         return input * input
+//     } 
 // }
 
-// console.log(foo(input))
+// console.log(foo("usdbd"))
 
-// console.log(typeof input)
+
 
                         // 5-masala
 
@@ -109,10 +87,10 @@
 // let input: number | string = "Khasan"
 
 // function getLength(input) {
-//     if(input  == isNaN){   //string
-//         return input.length //uzunligi
+//     if(input  == isNaN){  
+//         return input.length 
 //     }
-//     else if(input == Array){  //array
+//     else if(input == Array){ 
 //         return input.length
 //     }
 //     else{
